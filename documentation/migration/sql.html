@@ -16,13 +16,13 @@ subtitle: SQL Migrations
     <h2>Location and discovery</h2>
 
     <p>Sql migrations reside on the <strong>classpath</strong> or on the <strong>file system</strong> in one or more directories referenced by the <strong><a
-            href="/documentation/api/javadoc/org/flywaydb/core/Flyway#setLocations(java.lang.String...)"
+            href="{{ site.baseurl }}/documentation/api/javadoc/org/flywaydb/core/Flyway#setLocations(java.lang.String...)"
             >locations</a></strong> property.<br/>
         Unprefixed locations or locations with the <code>classpath:</code> prefix target the classpath.<br/>
         Locations with the <code>filesystem:</code> prefix target the file system.
     </p>
 
-    <p><img src="/assets/balsamiq/SqlMigrationBaseDir.png"/></p>
+    <p><img src="{{ site.baseurl }}/assets/balsamiq/SqlMigrationBaseDir.png"/></p>
 
     <p>New sql migrations are <strong>discovered automatically</strong> through classpath and file system scanning at runtime.<br/>
         This scanning is recursive. All migrations in directories below the specified ones are also picked up.</p>
@@ -31,7 +31,7 @@ subtitle: SQL Migrations
 
     <p>In order to be picked by the classpath scanner, the sql migrations must follow a naming pattern:</p>
 
-    <p><img src="/assets/balsamiq/SqlMigrationNaming.png"/></p>
+    <p><img src="{{ site.baseurl }}/assets/balsamiq/SqlMigrationNaming.png"/></p>
 
     <p>The file name consists of:</p>
     <ul>
@@ -72,6 +72,6 @@ comment
 INSERT INTO ${tableName} (name) VALUES ('Mr. T');</pre>
 
     <p class="next-steps">
-        <a class="btn btn-primary" href="/documentation/migration/java">Java-based migrations <i class="fa fa-arrow-right"></i></a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/documentation/migration/java">Java-based migrations <i class="fa fa-arrow-right"></i></a>
     </p>
 </div>
